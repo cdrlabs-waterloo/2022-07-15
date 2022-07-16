@@ -1,7 +1,7 @@
 Design described in:
 
     Stangherlin, Kleber, and Manoj Sachdev. "Design and Implementation of a Secure
-    RISC-V Microprocessor.", TVLSI (2022).
+    RISC-V Microprocessor.", 2022.
 
 The environment variable `ROOT_DIR` must be defined to the root directory.
 
