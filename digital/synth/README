@@ -1,0 +1,2 @@
+First run the synthesis at all sub-directories. Then run the top level with:
+  mkdir -p work && cd work && source ../run_synth ; cd ..

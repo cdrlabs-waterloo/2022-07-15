@@ -1,0 +1,4 @@
+setenv VIEW "schematic"
+setenv PROCESS "ff" ; setenv TEMP "0"  ; setenv SUPPLY "1.1" ; setenv CORNER "bc" ;liberate ../char.tcl && \
+setenv PROCESS "tt" ; setenv TEMP "25" ; setenv SUPPLY "1.0" ; setenv CORNER "tc" ;liberate ../char.tcl && \
+setenv PROCESS "ss" ; setenv TEMP "0"  ; setenv SUPPLY "0.9" ; setenv CORNER "wc" ;liberate ../char.tcl

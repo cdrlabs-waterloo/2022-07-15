@@ -1,0 +1,1 @@
+genus -f ../synth_cmo.tcl -log synthesis.log

@@ -1,0 +1,9 @@
+$ROOT_DIR/digital/rtl/clkg.v
+$ROOT_DIR/digital/rtl/mux.v
+$ROOT_DIR/digital/rtl/ram.v
+$ROOT_DIR/digital/rtl/rf.v
+$ROOT_DIR/digital/rtl/rng.v
+$ROOT_DIR/digital/rtl/cmbtr.v
+$ROOT_DIR/digital/rtl/tst.v
+$ROOT_DIR/digital/rtl/servant_top.v
+$ROOT_DIR/digital/rtl/top.v

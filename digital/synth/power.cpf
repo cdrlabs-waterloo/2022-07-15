@@ -1,0 +1,32 @@
+set_cpf_version 1.1
+
+set_design hgo_top
+
+set_hierarchy_separator "/"
+
+create_power_nets  -nets VDD     -voltage 1.0
+create_ground_nets -nets VSS 
+
+create_power_domain -name PD_CORE -default
+update_power_domain -name PD_CORE \
+                    -primary_power_net VDD \
+                    -primary_ground_net VSS
+
+create_global_connection -domain PD_CORE -net VDD -pins VDD
+create_global_connection -domain PD_CORE -net VSS -pins VSS
+
+## connections for the artisan srams
+create_global_connection \
+    -domain PD_CORE \
+    -net VDD \
+    -pins {VDDPE VDDCE}
+
+create_global_connection \
+    -domain PD_CORE \
+    -net VSS \
+    -pins {VSSE}
+
+create_nominal_condition -name typ     -voltage 1.0
+create_power_mode -name PM_ON -default -domain_conditions {PD_CORE@typ}
+
+end_design

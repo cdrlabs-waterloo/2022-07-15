@@ -1,0 +1,1 @@
+genus -f ../synth_pln.tcl -log synthesis.log

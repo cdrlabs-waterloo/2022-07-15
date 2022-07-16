@@ -1,0 +1,2 @@
+cp -r $ROOT_DIR/digital/synth/work/genus_invs_des/ .
+innovus -stylus -init genus_invs_des/genus.invs_setup.tcl

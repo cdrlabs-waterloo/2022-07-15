@@ -1,0 +1,6 @@
+Generate liberty files with the `liberate` tool.
+
+The DLO cells stand for Domino LOgic.
+
+    mkdir -p work && cd work && source ../run_liberate ; cd ..
+

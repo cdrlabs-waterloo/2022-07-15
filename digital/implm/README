@@ -1,0 +1,14 @@
+To perform digital implementation create a `work` directory, and from it run
+`source ../run_init`.
+
+mkdir -p work && cd work && source ../run_init ; cd ..
+
+Once Innovus has completed loading the new project, run source the
+floorplaning, powerplanning, and implementation TCL scripts.
+
+When it is done all relevant files have been generated, and you can open gui by
+typing `gui_show`, or exit with `exit`.
+
+If you want to load a previously generated design database, first open innovus with
+`source ../run_innvs` and then run `read_db <dbname>`.
+

@@ -1,0 +1,24 @@
+SOURCES += ../scripts/startup.S
+LDFILE  = ../scripts/link.ld
+OBJECTS = $(SOURCES:.c=.o)
+
+TOOLCHAIN_PREFIX=riscv64-unknown-elf
+
+default: $(TARGET).hex
+
+$(TARGET).elf: $(SOURCES)
+	$(TOOLCHAIN_PREFIX)-gcc -Os -march=rv32i -mabi=ilp32 -static -mcmodel=medany -mno-relax \
+	                   -fvisibility=hidden -nostdlib -nostartfiles -T$(LDFILE) -o$@ $^
+
+
+$(TARGET).bin: $(TARGET).elf
+	$(TOOLCHAIN_PREFIX)-objcopy -O binary $< $@
+
+$(TARGET).hex: $(TARGET).bin
+	python3 ../../python/makehex.py $(HEXFLAGS) --memsize 1024 $< > $@
+
+dump: $(TARGET).elf
+	$(TOOLCHAIN_PREFIX)-objdump -D $<
+
+clean:
+	rm -f *.elf *.bin *.dump

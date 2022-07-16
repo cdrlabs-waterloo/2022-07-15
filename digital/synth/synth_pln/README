@@ -1,0 +1,3 @@
+To run synthesis, create a `work` dir and from it run `source ../run_synth`.
+
+mkdir -p work && cd work && source ../run_synth ; cd ..

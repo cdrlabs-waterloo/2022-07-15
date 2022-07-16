@@ -1,0 +1,58 @@
+library (hgo_library_dlo) {
+  cell (AO_DLO_D0) {
+    area : 5.4;
+    dont_use : true;
+    dont_touch : false;
+    pin (Z1) {
+      function : "((A1 B1) CP)";
+    }
+    pin (Z2) {
+      function : "((A2 + B2) CP)";
+    }
+  } 
+  cell (AO_DLO_D1) {
+    area : 5.4;
+    dont_use : true;
+    dont_touch : false;
+    pin (Z1) {
+      function : "((A1 B1) CP)";
+    }
+    pin (Z2) {
+      function : "((A2 + B2) CP)";
+    }
+  } 
+  cell (XOR_DLO_D0) {
+    area : 6.84;
+    dont_use : true;
+    dont_touch : false;
+    pin (Z1) {
+      function : "(((A1 B2) + (B1 A2)) CP)";
+    }
+    pin (Z2) {
+      function : "(((A1 B1) + (B2 A2)) CP)";
+    }
+  } 
+  cell (XOR_DLO_D1) {
+    area : 6.84;
+    dont_use : true;
+    dont_touch : false;
+    pin (Z1) {
+      function : "(((A1 B2) + (B1 A2)) CP)";
+    }
+    pin (Z2) {
+      function : "(((A1 B1) + (B2 A2)) CP)";
+    }
+  } 
+  cell (XOR_DLO_D2) {
+    area : 8.28;
+    dont_use : true;
+    dont_touch : false;
+    pin (Z1) {
+      function : "(((A1 B2) + (B1 A2)) CP)";
+    }
+    pin (Z2) {
+      function : "(((A1 B1) + (B2 A2)) CP)";
+    }
+  } 
+}
+

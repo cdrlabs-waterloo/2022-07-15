@@ -1,0 +1,5 @@
+// spectre model include files
+simulator lang = spectre
+include "path/to/model.scs" section=tt_lib
+simulator lang = spice
+
